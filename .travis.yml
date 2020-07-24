@@ -1,0 +1,32 @@
+language: node_js
+
+cache:
+  directories:
+    - node_modules
+    - ~/.npm
+
+node_js:
+  - '12'
+
+git:
+  depth: 3
+
+script:
+  - yarn test
+
+notifications:
+  slack: agrodevespacio:fkHFwqCAC1Me2cYH5ca0Cv6N
+  email:
+    reciepients:
+      - luis@agrodev.cl
+    on_success: always
+    on_failure: always
+
+deploy:
+  provide: heroku
+  skip-cleanup: true
+  keep-history: true
+  api_key: 4b55248b-5d6c-4524-bca4-fdb6b3367c07
+  app: agrodev-store-backend
+  on:
+    repo: agrodev-CL/platzi-store-backend
