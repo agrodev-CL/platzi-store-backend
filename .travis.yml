@@ -15,7 +15,8 @@ script:
   - yarn test
 
 notifications:
-  slack: agrodevespacio:fkHFwqCAC1Me2cYH5ca0Cv6N
+  slack:
+    secure: "Y5mEeuQCUF2ezqRH/X0I1F4UYDyaJOP/LIkg5ScHW+MwkbEjdFd5NyrvtRw8PxS0nTnx8dRQwJiz76xmOvjpJdg+lQ1K6Vx99T6W22jjm4VnA29Nq1Ncaghgck7C62KiOauPHvzos1iqI0f8BNbo9yhutUxkK8/1gwfdbTKqZuBXY6yp53hRu0yomFlGW1a//jdT9boE5Pv1W/W+W19pqfEYdkWbmPeQfqxtypmQJL0Iynm3mNH0+8O8F+t2HALjJkSzp6kmCH7hu8eZ3N5PU5pvg2o5huHc1qBhZgffEwG6ZyX2Ouz3sxBG5xQZUg8ArQgJtPBoOyeVAtQ1GXVl5MLy+HbEdMdHnyE1UFWPDyBiQ1pbX+9HziHSZgC3B5TvSv4bXG+JDtM0v2y6VLgDd1k/Js/ujRc+srI6MUORP/x5V/qOSo46ejg7ohY5++z8uTh6SROdDlzzyVrkKkjOkB7IA5mwfh5Bkl+2Obo+i7XupSXr8/dUTVbImDmREkOyAYGdSJHt/5Hkn4m3KkoaQuS1j/Xju0jV57BTXZEdJCjz1QoIE3YBFgkiE33TEe6M7eBdVvL7BY3RU3HMnkDtCQRieafLTgUckUercH+Zdk1S7P0sm8ZKoReZ7002PTOPuG2qAF6W4sSY9u++2dK03e4VYEz3f7Qwk2M1LcBet2M="
   email:
     reciepients:
       - luis@agrodev.cl
@@ -26,7 +27,8 @@ deploy:
   provide: heroku
   skip-cleanup: true
   keep-history: true
-  api_key: 4b55248b-5d6c-4524-bca4-fdb6b3367c07
+  api_key:
+    secure: "Zr8ufhlh/q8VUto28WZ7FX6o8QvspLcY7KkklOW6oGbAsw2SmE28SLtcel9N33H00W3/p7qVmUWZY46IHn6msOLN3Dor6Fu7D/aTt7ScfQcoLE/MGvec6uOO3DdxxeguOzAaxxMwEXUwMnQVBuJn9J0TKezlUA5bsI9+iX07vQf1lvJfWYgVrPLSWzbY8i1vTyA/rr+cjhKRorobuoAXkhn/kxCirdPOn1LNsh0mdOUoMUK3GFqbFYJfK12x9lWE5W2vwBNbYwHFx1Dd2IPRA0Ro99zQZfEW6wM5V5YWPcywIAuYIPDfX3XR3//YhqWO78ABwIH2quyvrwwBqxbk8C7I1JVSwIZBnlJJMYzFaJsBT+8ycQLoiHto0NLBwbkYGeAx4zU+mWahy1vPzOQ3KnLBgEo1GPgkwxbBqf73kYthpxrI24V2N4NL7EAblDS9HFSPdVEYv+uC5+cYFKnf/QaFKtRPNUaK6XteGz/aY22uQNqCZPqXjtulBjri3zjylWx8RuB2CKDorfW+Tu+pJDqEiEamTSithDTKtCYKUweB2oPasm6pIKxG98LQ3gQvreoRCX5LJwW8fZsI8gNvh2DYmaK7/jYltXpI552scUf05UALbim8wD/oPRiYZD6KpHXtW1mOy0220KUdDRDoFf9JHLIR0HhGlqdvtCfRoBs="
   app: agrodev-store-backend
   on:
     repo: agrodev-CL/platzi-store-backend
